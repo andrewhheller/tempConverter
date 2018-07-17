@@ -16,10 +16,16 @@ const tempConverter = (temp, convertTo) => {
     return convertCtoF(temp)
   }
 
-  else {s
+  else {
     return 'Please enter a valid temperature type';
   }
 
 }
 
-console.log(tempConverter(0, 'f'));
+// console.log(tempConverter(0, 'f'));
+
+module.exports = {
+  convertFtoC,
+  convertCtoF,
+  tempConverter
+}
